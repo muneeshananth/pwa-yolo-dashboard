@@ -34,7 +34,7 @@ state = {
         var context = this;
       
         $.ajax({
-          url: 'http://34.233.121.200:8081/get_guest_dashboard/1',
+          url: 'http://34.233.121.200:5000/get_guest_dashboard/1',
           method: 'GET',
           success: function(response) {
             console.log("Before Guest");

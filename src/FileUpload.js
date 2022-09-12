@@ -42,7 +42,7 @@ class FileUpload extends React.Component{
 
         try {
           const res = await axios.post(
-            "http://34.233.121.200:8081/image_upload", formData);
+            "http://34.233.121.200:5000/image_upload", formData);
           console.log(res);
         } catch (ex) {
           console.log(ex);

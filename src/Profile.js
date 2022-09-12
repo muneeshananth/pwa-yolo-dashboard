@@ -61,7 +61,7 @@ export default class Profile extends Component {
         "guest_id" :  this.state.guest_id
       } 
       axios
-        .post("http://34.233.121.200:8081/guest_image/:id", data)
+        .post("http://34.233.121.200:5000/guest_image/:id", data)
         .then((res) => {
           console.log(res);
           if (res.status == 200) {
@@ -99,7 +99,7 @@ export default class Profile extends Component {
     console.log(this.state.aboutme);
 
     axios
-    .post("http://34.233.121.200:8081/guest_about_me/1", data)
+    .post("http://34.233.121.200:5000/guest_about_me/1", data)
     .then((res) => {
       console.log(res);
       if (res.status == 200) {
@@ -153,7 +153,7 @@ export default class Profile extends Component {
     };
     
     axios
-    .post("http://34.233.121.200:8081/guest_occupation/1", data)
+    .post("http://34.233.121.200:5000/guest_occupation/1", data)
     .then((res) => {
       console.log(res);
       if (res.status == 200) {
@@ -197,7 +197,7 @@ export default class Profile extends Component {
     };
     
     axios
-    .post("http://34.233.121.200:8081/guest_mobile_number/1", data)
+    .post("http://34.233.121.200:5000/guest_mobile_number/1", data)
     .then((res) => {
       console.log(res);
       if (res.status == 200) {
@@ -271,7 +271,7 @@ export default class Profile extends Component {
     var context = this;
 
     $.ajax({
-      url: "http://34.233.121.200:8081/guest_personal_details/1",
+      url: "http://34.233.121.200:5000/guest_personal_details/1",
       method: "GET",
       success: function (response) {
         console.log("Before Get Guest Profile");

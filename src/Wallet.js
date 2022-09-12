@@ -34,7 +34,7 @@ export default class wallet extends Component {
     var context = this;
 
     $.ajax({
-      url: "http://34.233.121.200:8081/guest_get_invoice_details/1",
+      url: "http://34.233.121.200:5000/guest_get_invoice_details/1",
       method: "GET",
       success: function (response) {
         console.log("Before Get Guest Invoice Details");
@@ -128,7 +128,7 @@ export default class wallet extends Component {
       };
 
       axios
-        .post("http://34.233.121.200:8081/guest_add_payment/1", AddPaymentData)
+        .post("http://34.233.121.200:5000/guest_add_payment/1", AddPaymentData)
         .then((res) => {
           console.log(res);
           if (res.status == 200) {

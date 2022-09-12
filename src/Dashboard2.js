@@ -30,7 +30,7 @@ export default class Dashboard extends Component {
       var context = this;
     
       $.ajax({
-        url: 'http://34.233.121.200:8081/guest_dashboard/1',
+        url: 'http://34.233.121.200:5000/guest_dashboard/1',
         method: 'GET',
         success: function(response) {
           console.log("Before Get Guest Dashboard");

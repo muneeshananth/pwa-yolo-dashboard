@@ -114,7 +114,7 @@ export default class Parents extends Component {
       };
 
       axios
-        .post("http://34.233.121.200:8081/guest_parent_details/1", Addparentdetails)
+        .post("http://34.233.121.200:5000/guest_parent_details/1", Addparentdetails)
         .then((res) => {
           console.log(res);
           if (res.status == 200) {
@@ -155,7 +155,7 @@ export default class Parents extends Component {
   fetch() {
     var context = this;
     $.ajax({
-      url: "http://34.233.121.200:8081/guest_personal_details/1",
+      url: "http://34.233.121.200:5000/guest_personal_details/1",
       method: "GET",
       success: function (response) {
         console.log("Before Get Guest Profile");

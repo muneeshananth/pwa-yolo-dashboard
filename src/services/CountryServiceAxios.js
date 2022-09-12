@@ -3,7 +3,7 @@ import axios from "axios";
 export async function getCountry() {
     console.log("getAllCountry using axios");
     try{
-        const response = await axios.get('http://34.233.121.200:8081/country');
+        const response = await axios.get('http://34.233.121.200:5000/country');
         console.log(response.data);
         return response.data;
     }catch(error) {
@@ -15,7 +15,7 @@ export async function getCountry() {
 export async function getCountryById(id) {
     console.log("getAllCountry using axios");
     try{
-        const response = await axios.get('http://34.233.121.200:8081/country/'+id);
+        const response = await axios.get('http://34.233.121.200:5000/country/'+id);
         console.log(response.data);
         return response.data;
     }catch(error) {
@@ -29,7 +29,7 @@ export async function createContry(data) {
     console.log("data");
     console.log(data);
     
-    const response = await fetch('http://34.233.121.200:8081/country', {
+    const response = await fetch('http://34.233.121.200:5000/country', {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(data)
