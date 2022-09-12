@@ -35,7 +35,7 @@ export default class Guest extends Component {
         var context = this;
       
         $.ajax({
-          url: 'http://localhost:5000/guest_personal_details/1',
+          url: 'http://34.233.121.200:8081/guest_personal_details/1',
           method: 'GET',
           success: function(response) {
             console.log("Before Guest");

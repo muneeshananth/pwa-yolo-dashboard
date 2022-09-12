@@ -31,7 +31,7 @@ export default class Country extends Component {
         var context = this;
       
         $.ajax({
-          url: 'http://localhost:5000/country/1',
+          url: 'http://34.233.121.200:8081//country/1',
           method: 'GET',
           success: function(response) {
             console.log("Before Country");
